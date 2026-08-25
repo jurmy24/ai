@@ -7,6 +7,8 @@ Rules and configuration for the AIs I work with (Claude Code, ChatGPT/Codex, Cur
 ```
 rules/
   writing-style.md    how I want prose written (docs, READMEs, comments, articles)
+  git.md              commit message format (emoji prefixes), branches, git conduct
+  diagrams.md         architecture diagrams for research writeups (layout, shapes, colors)
 ```
 
 Each rule is a single self-contained Markdown file. That is deliberate. A rule an AI can load with one file read or one URL fetch is a rule that actually gets used. Don't split a rule across files, and keep reference examples inside the rule they belong to.
@@ -75,7 +77,6 @@ Keep the format of `rules/writing-style.md`:
 
 Things worth writing down once instead of re-explaining per session:
 
-- `git.md`: commit message format, when to commit, branch naming, never force-push shared branches.
 - `python.md`: uv over pip, ruff, type hints, project layout, test conventions.
 - `typescript.md`: same for the JS side (package manager, formatter, framework defaults).
 - `about-me.md`: who I am, what I know well, what to explain vs. assume. Lets the AI calibrate answers instead of guessing my level.
